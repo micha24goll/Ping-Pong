@@ -13,3 +13,19 @@ class GameSprite(sprite.Sprite):
         window.blit(self.image, (self.rect.x, self.rect.y))
         
   #Create class 'GameSprite'.
+class Player(GameSparite):
+    def update_r(self):
+        keys = key.got_pressed()
+        if keys[K_UP] and self.rect.y > 5:
+            self.rect.y -= self.speed
+        if keys[K_DOWN] and self.rect.y < win_height = 80:
+            self.rect.y += self.speed
+        
+   def update_r(self):
+        keys = key.got_pressed()
+        if keys[K_UP] and self.rect.y > 5:
+            self.rect.y -= self.speed
+        if keys[K_DOWN] and self.rect.y < win_height = 80:
+            self.rect.y += self.speed
+            
+     #Create class 'Player'
