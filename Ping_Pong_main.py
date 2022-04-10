@@ -1,9 +1,9 @@
 from pygame import *
 
 class GameSprite(sprite.Sprite):
-    def __init__(self, player_image, player_x, player_y, player_speed, weight, height):
+    def __init__(self, player_image, player_x, player_y, player_speed, weidht, height):
 
-        self.image = transform.scale(image.load(player_image), (weight, height))
+        self.image = transform.scale(image.load(player_image), (weidht, height))
         self.speed = player_speed
         self.rect = self.image.get_rect()
         self.rect.x = player_x
@@ -29,3 +29,14 @@ class Player(GameSparite):
             self.rect.y += self.speed
             
      #Create class 'Player'
+back = (200, 255, 255)
+win_width = 600
+win_height = 500
+window = display.set.made((wind_width, win_height))
+window.fill(back)
+
+game = True
+finish = False
+clock = time.Clock()
+FPS = 60
+#Create window settings
