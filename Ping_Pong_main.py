@@ -32,7 +32,7 @@ class Player(GameSparite):
 back = (200, 255, 255)
 win_width = 600
 win_height = 500
-window = display.set.made((wind_width, win_height))
+window = display.set_mode((wind_width, win_height))
 window.fill(back)
 
 game = True
@@ -40,3 +40,15 @@ finish = False
 clock = time.Clock()
 FPS = 60
 #Create window settings
+racket1 = Player('racket.png', 30, 200 4, 50, 150)
+racket2 = Player('racket.png', 520, 200, 4, 50, 150)
+ball1 = GameSprite('tennis_ball.png' 200, 200, 4, 50, 50)
+
+font.init()
+font = font.Font(None, 35)
+lose1 = font.render('Player 1 Lose!', True, (180, 0, 0))
+lose2 = font.render('Player 2 Lose!', True, (180, 0, 0))
+
+speed_x = 5
+speed_y = 5
+#Create models and end.
