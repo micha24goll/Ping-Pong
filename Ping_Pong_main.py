@@ -51,4 +51,4 @@ lose2 = font.render('Player 2 Lose!', True, (180, 0, 0))
 
 speed_x = 5
 speed_y = 5
-#Create models and end.
+#Create players and fonts.
